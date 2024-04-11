@@ -1,0 +1,530 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+/* ===================================================section-special ============================================ */
+.x-clear-x {
+    clear: both;
+    width: 100%;
+}
+
+
+
+
+/* ===================================================section-common-animations ============================================ */
+
+/* bx-shadowgrow */
+@keyframes bx-shadowgrow {
+    0% {}
+
+    10% {
+        box-shadow: 0px 0px 120px rgba(255, 233, 137, 0.955)
+    }
+
+    95% {
+        box-shadow: 0px 0px 50px rgba(255, 238, 143, 0.803)
+    }
+
+    100% {
+        box-shadow: none
+    }
+}
+
+
+
+
+/* ===================================================section-navbar ============================================ */
+.x-navbarcolor {
+    background-color: rgb(4, 17, 0);
+    border-bottom: 4px solid #E9B824;
+}
+
+.offcanvas:hover {
+    animation-name: bx-shadowgrow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+
+/* -----------------------------------------SidePannel--------------------------------------- */
+.x-alert-box {
+    margin-top: 40px;
+}
+
+.x-alert {
+    font-size: 15px;
+    color: rgb(43, 12, 12);
+    text-decoration: none;
+}
+
+/* ===================================================section-1 ============================================ */
+
+.section-1 {
+    margin-top: 78px;
+    width: 100%;
+}
+
+
+
+.x-sliderimg {
+    position: relative;
+    right: inherit;
+    /* : 600px; */
+    width: 100%;
+    transform: scalex(-1);
+}
+
+.x-section1-box {
+    padding: 50px;
+}
+
+.sec1-editorchoicelogo {
+    width: 100%;
+}
+
+.sec-1-btn {
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px inset black;
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
+}
+
+
+/* ===================================================section-2 ============================================ */
+.section-2 {
+    min-height: 100svh;
+    width: 100%;
+}
+
+.sec2-div {
+    width: 90%;
+    margin: auto;
+}
+
+
+.sec-2-box1 {
+    width: 94%;
+    height: auto;
+    margin-left: auto;
+    /* background-color: #fff; */
+    /* rotate: 30deg; */
+
+}
+
+.sec-2-img {
+    width: 100%;
+    rotate: -58deg;
+    margin-left: 100px;
+}
+
+
+.sec-2-img:hover {
+    animation-name: colorhue;
+    animation-duration: 700ms;
+    animation-iteration-count: 2;
+
+}
+
+
+@keyframes colorhue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+        filter: hue-rotate(90deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    75% {
+        filter: hue-rotate(270deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+.sec-2-box2 {
+    /* width: 400px; */
+    /* margin-left: auto; */
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/* ===================================================section-3 ============================================ */
+.section-3 {
+    /* background-color: #fff; */
+    overflow: hidden;
+}
+
+.sec3-div {
+    /* background-color: #fff; */
+
+}
+
+.sec-3-box1 {
+    /* width: 400px; */
+    margin-right: auto;
+    margin-left: 70px;
+}
+
+.sec-3-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px inset black;
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
+}
+
+
+
+.sec-3-box2 {
+    width: 90%;
+    height: 100%;
+    max-height: 1700px;
+    /* background-color: #fff; */
+    rotate: 55deg;
+    /* margin-right:auto; */
+
+    overflow: hidden;
+
+}
+
+
+
+.sec-3-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -99;
+}
+
+.sec3-box2-b {
+    width: 400px;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 30px;
+    position: relative;
+    z-index: 100;
+    rotate: -55deg;
+}
+
+.sec3-box2-b1 {
+    background-image: url(img-x/gallery-1.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1530px;
+    left: 80px;
+}
+
+.sec3-box2-b2 {
+    background-image: url(img-x/gallery-2.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1105px;
+    left: -280px;
+}
+
+.sec3-box2-b3 {
+    background-image: url(img-x/gallery-3.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1715px;
+    left: 370px;
+}
+
+.sec3-box2-b4 {
+    background-image: url(img-x/gallery-4.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1400px;
+    left: 95px;
+}
+
+.sec3-box2-b5 {
+    background-image: url(img-x/gallery-5.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1080px;
+    left: 95px;
+}
+
+.sec3-box2-b6 {
+    background-image: url(img-x/gallery-6.jpg);
+    background-size: cover;
+    position: relative;
+    top: -1085px;
+    left: 40px;
+}
+
+.sec3-box2-b7 {
+    width: 235px;
+    height: 250px;
+    background-color: rgb(65, 134, 253);
+    rotate: -55deg;
+    position: relative;
+    border-radius: 16px;
+    top: -1615px;
+    left: 380px;
+    border:8px solid orange;
+}
+
+.sec3box2-b-anime:hover {
+    animation-name: boxshadowopen;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes boxshadowopen {
+    0% {}
+
+    10% {
+        box-shadow: 0px 0px 45px black;
+    }
+
+    90% {
+        box-shadow: 0px 0px 45px black;
+    }
+
+    100% {}
+
+
+}
+
+
+
+/* ===================================================section-4 ============================================ */
+.section-4 {
+    margin-top: 40px;
+
+}
+
+.sec4-div {}
+
+.sec-4-box1 {
+
+    margin-left: auto;
+
+}
+
+.sec-4-btn {
+    height: 40px;
+    width:150px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px inset black;
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
+}
+
+
+
+.sec-4-box2 {
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 22% 5% 22% 5% / 22% 5% 22% 5%;
+    position: relative;
+    background-image: linear-gradient(to right bottom, #ffc007, #ffc007, #ffc007, #fff8a8, #fff3c0, #ffffff, #ffffff, #fff8a8, #fff8a8, #ffc007, #ffc007, #ffc007);
+    /* rotate: 55deg; */
+    /* position: relative;
+    right: 450px; */
+
+}
+
+.sec-4-imgbox {
+   
+    z-index: -99;
+    height: 90%;
+    width: 100%;
+}
+
+
+
+.sec-4-img {}
+
+/*      ------------------------------------------       */
+
+
+.sec4box2-car {
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    border-radius: 50px 0px 50px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px black;
+    position: relative;
+    margin: 12px;
+    background-color: white;
+
+}
+
+                .sec4box2-car1 {
+                  
+               
+                }
+
+                .sec4box2-car2 {
+                 
+             
+                }
+
+/* ---------------------------------------- */
+.sec-4-box2-card-a {
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+
+.sec-4-box2-card-a div {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+/* ===================================================section-5 ============================================ */
+.sec5container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+
+
+.sec5div-x {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgba(96, 96, 96, 0.537);
+    align-content: center;
+}
+
+.sec5div-x:hover {
+    box-shadow: 0px 0px 50px rgb(78, 78, 78);
+}
+
+.sec5div-1 {
+    background-color: #000000;
+}
+
+.sec5div-2 {
+    background-color: #e6e6e6;
+}
+
+.sec5div-3 {
+    background-color: #E60023;
+}
+
+.sec5div-4 {
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+.sec5div-5 {
+    background-color: #cbcbcb;
+}
+
+.sec5div-6 {
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+
+
+/* ===================================================section-6 ============================================ */
+
+
+
+.sec6-boxmain{background-color: transparent;
+                border-radius: 30px;}
+
+.sec6-col1imgbox{margin: auto;}
+.sec6-cameraimg{transform: scalex(-1);
+    width: 80%;
+    width: 100%;
+    }
+
+.sec6col2card{background-color: #f0dc6b;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    padding: 50px;
+    border-radius:70px 70px 70px 70px  ;  
+    color: #000000;  
+}
+
+.sec6col2card:hover{animation:sec6cardhover 3s linear infinite  ;}
+
+@keyframes sec6cardhover{
+25%{background-color:#fef4b8 ;}
+50%{background-color:#ffd900 ;
+    color: #595959;}
+75%{background-color:#fef4b8 ;}
+100%{background-color:#ffd900 ;
+    color: #000000;}
+
+
+}
+
+
+
+.sec6col2cardimgcircle{
+    background-image: url(img-x/client.png);
+    background-size: contain;
+        margin:  auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 140px;
+
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================section-xxxxx ============================================ */

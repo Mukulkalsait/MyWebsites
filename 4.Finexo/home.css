@@ -1,0 +1,423 @@
+/* ==================================================== */
+
+
+
+/* *{margin: 0%; padding: 0%; box-sizing: border-box; */
+
+/* scroll-behavior: smooth; }*/
+
+
+
+/* ============================mediaquiry======================== */
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+
+
+/* section-1 */
+.x-media-hide{display:none;}
+.x-div-innerposter{ padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;}
+.x-media-heigh{font-size: 20px;
+                height: 50%;
+                width: 50%;}
+
+    
+}
+
+@media only screen and (max-width:992px) and (min-width: 768px) {
+
+
+    /* section-1 */
+    .x-div-innerposter{ padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        position: relative;
+        bottom: 200px;}
+    
+        
+    }
+
+    @media only screen and (max-width: 1440px) and (min-width: 992px) {
+
+    
+
+    }
+
+
+
+
+
+
+
+
+/* ================================================================================= */
+
+
+
+
+
+/* ========================================section-navbar ========================================= */
+
+.x-navbarbgc {
+    background-image: linear-gradient(to left, #000baf, #030897, #050681, #05046a, #050255);
+    height: 60px;
+}
+
+
+.x-navlist {
+    margin-left: 18px;
+    font-weight: 500;
+    color: white;
+
+}
+
+/* ----------------------------------- */
+.x-navlist:hover {
+    color: aqua;
+}
+
+.x-dropdown{background-color: #ffffff;}
+
+
+
+
+
+
+
+/* ========================================section-1 ========================================= */
+.section-1{width: 100%;
+    background-image: linear-gradient(to left, #000baf, #030897, #050681, #05046a, #050255);}
+
+
+
+                                
+                            /* =========================== */
+                            .x-overflow {
+                                overflow: visible;
+                            }
+                            /* =========================== */
+
+
+.div-height-section-1 {
+    height: 70svh;
+    padding-top: 150px;
+    margin-top: 60px;
+}
+
+
+
+.x-background {
+    background-image: linear-gradient(to left, #000baf, #030897, #050681, #05046a, #050255);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.x-bottom-100px {
+    position: relative;
+    bottom: 100px;
+    overflow: visible;
+    height: 100%;
+}
+.x-media-height-i{height: 100%;
+                width: 90%;}
+
+.x-imageJump {
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    position: relative;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes updown {
+    1% {
+        position: relative;
+        bottom: 1px
+    }
+
+
+    100% {
+        position: relative;
+        bottom: 100px
+    }
+
+
+}
+
+/* 
+.x-poster {
+    position: relative;
+    bottom: 100px;
+    animation-name: updownposter;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    overflow: visible;
+    transition: (3s);
+} */
+
+/* --------------------------- */
+@keyframes updownposter {
+    0% {
+        position: relative;
+    }
+
+    50% {
+        position: relative;
+        top: 50px;
+    }
+
+    100% {
+        position: relative;
+    }
+
+
+}
+
+
+/* -------------------------- */
+
+.x-div-innerposter {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+}
+
+
+
+/* ========================================section-2 ========================================= */
+
+.x-cardcolor {
+    background-color: #e8e8e8;
+}
+
+
+
+
+
+
+/* ========================================section-3 ========================================= */
+.x-bluebox {
+    background-color: rgb(8, 8, 73);
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================section-4-accordian ========================================= */
+.x-accordianbgcolor {
+    background-color: rgb(225, 228, 255);
+}
+
+.x-AccordianData h2:hover {
+    color: rgb(255, 94, 0);
+}
+
+.x-circle {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgb(5, 5, 51);
+    margin: 20px auto;
+    font-size: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: rotatecircle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotatecircle {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 1080deg;
+    }
+}
+
+.x-circle-1 {
+    background-image: url(images/w1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.x-circle-2 {
+    background-image: url(images/w2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.x-circle-3 {
+    background-image: url(images/w3.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.x-circle-4 {
+    background-image: url(images/w4.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+/* ========================================section-5 ========================================= */
+.x-bluebox-2 {
+    background-image: linear-gradient(to bottom, #000baf, #030897, #050681, #05046a, #050255);
+    height: auto;
+}
+
+.x-imagecircle {
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.x-innerbluebox {
+    height: 430px;
+    
+    box-shadow: 0px 0px 45px rgb(254, 254, 254);
+    border:1px solid black ;
+    background-color: #dbe0ee;
+    border-radius: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+}
+.x-innerbluebox:hover{animation-name: x-opencard;
+                    animation-duration: 8s;
+                    animation-iteration-count: 1;
+                    }
+
+@keyframes x-opencard{
+0%{}
+20%{box-shadow: 0px 0px 45px rgb(11, 2, 60);}
+80%{box-shadow: 0px 0px 45px rgb(11, 2, 60);}
+100%{box-shadow: 0px 0px 45px rgb(254, 254, 254);;}
+
+}
+
+
+
+
+.x-innerbluebox h3 {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.x-iconfly {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 12px;
+    color: #030897;
+}
+
+.x-iconfly:hover {
+    color: orangered;
+}
+
+
+
+
+
+/* ========================================section-6 ========================================= */
+.section-6 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.x-div {
+    width: 1100px;
+    margin: auto;
+}
+
+.x-card {
+    margin: 1px;
+    box-shadow: 0px 0px 5px rgb(117, 117, 117);
+    overflow: visible;
+    padding: 20px;
+}
+
+.x-imagecenter {
+    border-radius: 50%;
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+/* ========================================section-7 ========================================= */
+.x-bluebox-3 {
+    background-image: linear-gradient(to bottom, #000baf, #030897, #050681, #05046a, #050255);
+    height: auto;
+}
+
+
+
+.x-lineHeight40{line-height: 40px;
+                font-size: 22px;}
+.x-lineHeight40{line-height: 30px;
+                font-size: 18px;}
+
+
+
+/* ========================================section-futter ========================================= */
+.x-whitebox-1 {
+    background-color: white;
+    height: 5svh;
+}
+
+.x-nameHover:hover{color: orangered;
+}
+
+
+.x-iconfly-f {
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 12px;
+    color: #888cff;
+}
+.x-iconfly-f:hover{
+    color: orangered;
+}
