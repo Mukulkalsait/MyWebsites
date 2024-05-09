@@ -1,0 +1,12 @@
+.section-1{
+  background-color: #cbc9c9;
+  padding-bottom: 20px;
+}
+
+
+a{
+  text-decoration: none;
+}
+li:hover { 
+  background-color: antiquewhite;
+}
