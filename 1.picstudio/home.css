@@ -80,7 +80,7 @@ body {
     position: relative;
     right: inherit;
     /* : 600px; */
-    width: 100%;
+    width: 90%;
     transform: scalex(-1);
 }
 
@@ -340,8 +340,10 @@ body {
 
 
 .sec-4-box2 {
+    width: auto;
     padding: 50px;
-    margin-top: 30px;
+    margin:30px auto;
+    margin-bottom: 30px;
     border-radius: 22% 5% 22% 5% / 22% 5% 22% 5%;
     position: relative;
     background-image: linear-gradient(to right bottom, #ffc007, #ffc007, #ffc007, #fff8a8, #fff3c0, #ffffff, #ffffff, #fff8a8, #fff8a8, #ffc007, #ffc007, #ffc007);
@@ -352,10 +354,8 @@ body {
 }
 
 .sec-4-imgbox {
-   
     z-index: -99;
-    height: 90%;
-    width: 100%;
+    width: 95%;
 }
 
 
@@ -393,6 +393,9 @@ body {
     height: 100%;
     background-color: white;
     color: black;
+}
+.sec-4-box2-card-a img {
+ max-height: 300px;
 }
 
 .sec-4-box2-card-a div {
