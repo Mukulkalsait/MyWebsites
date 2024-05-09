@@ -1,12 +1,17 @@
 .section-1{
   background-color: #cbc9c9;
   padding-bottom: 20px;
+  min-height: 100svh;
 }
 
 
 a{
   text-decoration: none;
 }
-li:hover { 
+li a:hover { 
   background-color: antiquewhite;
+}
+
+.list-group li{
+  list-style-type: none;
 }
