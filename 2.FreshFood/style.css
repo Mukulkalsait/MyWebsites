@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* ==NavBar== */
+
+.navbar {
+  height: 80px;
+}
+
+.secNavbarimg-div {
+  width: 240px;
+  height: 4rem;
+}
+
+.form-control:focus {
+  border: 1px solid rgba(108, 108, 108, 0.5);
+  box-shadow: 0px 0px 9px red;
+}
+
+.nav-item {
+  margin-left: 4px !important;
+  border-bottom:4px solid transparent ;
+  transition: all 500ms;
+}
+
+.nav-item:hover{
+  border-bottom:4px solid red ;
+}
+.navbar-collapse > form{
+  border-bottom:4px solid transparent ;
+
+}
+
+button[type="button"]:focus {
+  transition: all 500ms;
+  color: #000000;
+}
+.dropdown-menu>div>li>a:hover{
+ background: rgba(255, 74, 74, 0.76);
+ transition: all 500ms;
+
+}
