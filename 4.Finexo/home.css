@@ -192,6 +192,10 @@
 
 
 /* ========================================section-2 ========================================= */
+.sec2-cardOuterbox , .sec2-cardOuterbox > div {
+    height: 100%;
+    /* background-color: #000baf; */
+}
 
 .x-cardcolor {
     background-color: #e8e8e8;

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cards-X</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- ====== carousal ===== -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <style>
+    .container {
+      transition: all .5s ease-out;
+    }
+
+    .card {
+      box-shadow: 0px 0px 14px 14px rgba(0, 0, 0, 0.21);
+      transition: all .5s ease-out;
+    }
+
+    .animate {
+      background-image: linear-gradient(to right, #00af17d3, #0015ffbb, #c17a00cd, #e94f1cbf, #f53831b9, #00af17bb, #e90097a9, #b500cdb1, #0015ffa5);
+      /* -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
+      background-size: 400%;
+      animation: nameanime 10s linear 0s infinite;
+      color: white;
+      box-shadow: 0px 24px 14px 14px rgba(0, 0, 0, 0.378);
+
+      transform: translateY(-32px);
+      /* transform: translateY(-22px)  scale(1.05,1.05); */
+
+    }
+
+    .animate2 {
+      transform: scale(1.2, 1.2);
+    }
+
+    .disapear {
+      transform: scale(0, 0);
+    }
+.owl-stage-outer{
+  overflow-y: visible !important;
+}
+
+    @keyframes nameanime {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="my-5">
+    <div class="section-1 container-fluid  pt-5 p-5">
+      <div class="container pt-5">
+        <div class="row m-0 p-0 px-1">
+          <div class="col-12 col-md-4 m-0 p-0 px-1">
+            
+            <div class="card card_animate" style="width: 18rem;" id="Basic" onclick="cardSelect(this)">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Basic Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Central Park</li>
+                  <li>Statue of Liberty</li>
+                  <li>Empire State Building</li>
+                  <li>Times Square</li>
+                  <li>Brooklyn Bridge</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="col-12 col-md-4 m-0 p-0 px-1">
+
+           
+            <div class="card card_animate" style="width: 18rem;" id="Gold" onclick="cardSelect(this)">
+              <img src=" https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg
+              " class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-warning">Gold Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Times Square</li>
+                  <li>Brooklyn Bridge</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="col-12 col-md-4 m-0 p-0 px-1">
+
+
+           
+            <div class="card card_animate" style="width: 18rem;" id="Platinum" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container mt-5 text-center">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <h1 id="op"></h1>
+        </div>
+        <div class="col-12 col-md-3 ">
+          <div class="div pt-1">
+            <button type="button" class="btn btn-lg border border-black  btn-warning d-none" id="btnBox"
+              onclick="procede('x')">Procede to
+              Pay</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OWL CAROUSAL BILOW -->
+
+
+
+  <!-- <section>
+    <div class="section-3 container-fluid mt-2 overflow-visible ">
+
+     
+      <div class="owl-carousel " id="sec3-slider1">
+
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum1" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum2" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum3" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum4" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum5" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum6" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+        <div class="div">
+           <div class="card card_animate" style="width: 18rem;" id="Platinum7" onclick="cardSelect(this)">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-success">Platinum Tour</h5>
+                <p class="card-text">
+                <ul>
+                  <li>Metropolitan Museum of Art</li>
+                  <li>Broadway Show Liberty</li>
+                  <li>One World Observator Building</li>
+                  <li>Central Park Metropolitan</li>
+                  <li>Statue of World</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">More...</a>
+              </div>
+            </div>
+           
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+
+
+
+  <pre class="d-none">
+  for (i of document.all) {
+    i.removeAttribute('class');
+};
+querySelectorAll() 
+</pre>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <script>
+
+    
+    // $(document).ready(function () {
+    //   $("#sec3-slider1").owlCarousel({
+    //     margin: 10,
+    //     loop: true,
+    //     // autoplay: true,
+    //     // autoplayTimeout: 1000,
+    //     // autoplayHoverPause: false,
+    //     responsive: {
+    //       0: {
+    //         items: 1,
+    //         nav: true
+    //       },
+    //       600: {
+    //         items: 3,
+    //         nav: false
+    //       },
+    //       1000: {
+    //         items: 5,
+    //         nav: true,
+
+    //       }
+    //     }
+    //   })
+    // });
+
+
+
+
+
+    // =========================================================
+    others = document.querySelectorAll('.card');
+    othersNew = document.querySelectorAll('.card_animate');
+    op = document.getElementById('op');
+    btnBox = document.getElementById('btnBox');
+    var package;
+
+    function cardSelect(arg) {
+      // console.log(arg);
+
+      if (arg.classList.contains("animate")) {
+        arg.classList.toggle('animate');
+        op.innerHTML = "Please Select Desired Package To Procede...";
+        btnBox.classList.add('d-none');
+        for (i = 0; i < others.length; i++) {
+          ele = others[i];
+          // console.log(ele)
+          ele.classList.add('card_animate')
+        }
+
+      }
+      else {
+        for (i = 0; i < others.length; i++) {
+          ele = others[i];
+          // console.log(ele)
+          ele.classList.remove('animate')
+        }
+        arg.classList.toggle('animate');
+        arg.classList.remove('card_animate');
+        res = `You Have selected our <span class="text-warning">${arg.id}</span> Package.`;
+        op.innerHTML = res;
+        btnBox.classList.remove('d-none');
+        package = arg;
+      }
+    }
+
+    function procede(arg) {
+      package.classList.toggle('disapear');
+      for (j = 0; j < othersNew.length; j++) {
+        ele = othersNew[j];
+        console.log(ele)
+        ele.classList.toggle('disapear');
+
+      }
+      package.classList.toggle('animate2');
+
+    }
+
+
+  </script>
+</body>
+
+</html>
